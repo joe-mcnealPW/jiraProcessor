@@ -4,12 +4,20 @@
 
 // Get original JSON from file
 var originalJSON = require("./jiraIssueInput.json");
+var fs = require("fs");
 
 // Call processor function to take in original JSON and produce the data
 // in the new JSON format.
 var processedJSON = processJSON(originalJSON);
 
 console.log(processedJSON);
+
+
+fs.appendFile("jiraIssueOutput.json", JSON.stringify(processedJSON), function (err) {
+  if (err) throw err;
+  console.log("Saved!");
+});
+
 
 
 /*

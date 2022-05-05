@@ -1,0 +1,47 @@
+{
+    "expand": "schema,names",
+    "startAt": 2,
+    "maxResults": 2,
+    "total": 6,
+    "issues": [
+        {
+            "expand": "html",
+            "id": "10123",
+            "self": "http://localhost:8080/rest/api/2/issue/BULK-38",
+            "key": "BULK-38",
+            "fields": {
+                "summary": "aaaaa",
+                "timetracking": null,
+                "issuetype": {
+                    "self": "http://localhost:8080/rest/api/2/issuetype/5",
+                    "id": "5",
+                    "description": "The sub-task of the issue",
+                    "iconUrl": "http://localhost:8080/images/icons/issue_subtask.gif",
+                    "name": "Sub-task",
+                    "subtask": true
+                }
+            },
+            "transitions": "http://localhost:8080/rest/api/2/issue/BULK-38/transitions"
+        },
+        {
+
+            "expand": "html",
+            "id": "10108",
+            "self": "http://localhost:8080/rest/api/2/issue/BULK-32",
+            "key": "BULK-32",
+            "fields": {
+                 "summary": "subtasks are important, too",
+                 "timetracking": null,
+                 "issuetype": {
+                     "self": "http://localhost:8080/rest/api/2/issuetype/5",
+                     "id": "5",
+                     "description": "The sub-task of the issue",
+                     "iconUrl": "http://localhost:8080/images/icons/issue_subtask.gif",
+                     "name": "Sub-task",
+                     "subtask": true
+                 }
+            },
+            "transitions": "http://localhost:8080/rest/api/2/issue/BULK-32/transitions"
+        }
+    ]
+}
